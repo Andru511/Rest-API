@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "4d27cfd9-762f-4384-a0a5-14fbf33e999b",
+		"name": "REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "44567896",
+		"_collection_link": "https://johndoe-8350999.postman.co/workspace/John-Doe's-Workspace~60aafb00-78e0-42c2-8ab3-98f1eb34534d/collection/44567896-4d27cfd9-762f-4384-a0a5-14fbf33e999b?action=share&source=collection_link&creator=44567896"
+	},
+	"item": [
+		{
+			"name": "Get List Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4567/api/books"
+			},
+			"response": []
+		},
+		{
+			"name": "SINGLE USER",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:4567/api/books/1"
+			},
+			"response": []
+		},
+		{
+			"name": "CRATE USER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Belajar Java\",\r\n  \"author\": \"Pingo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4567/api/books"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Belajar Java Dan MTK\",\r\n  \"author\": \"Pingo\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4567/api/books/1"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4567/api/books/2"
+			},
+			"response": []
+		}
+	]
+}
